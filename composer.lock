@@ -1,0 +1,117 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "7a9eef444282b8600204d39fd73eba00",
+    "packages": [
+        {
+            "name": "dandelionmood/lastfm",
+            "version": "v0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dandelionmood/php-lastfm.git",
+                "reference": "8ad35aaec70ac3ff259f483d62d58f3d3a8ae375"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dandelionmood/php-lastfm/zipball/8ad35aaec70ac3ff259f483d62d58f3d3a8ae375",
+                "reference": "8ad35aaec70ac3ff259f483d62d58f3d3a8ae375",
+                "shasum": ""
+            },
+            "require": {
+                "kriswallsmith/buzz": ">=0.9",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "apigen/apigen": "2.8.0",
+                "phpunit/phpunit": "3.7.18"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Dandelionmood": "lib"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pierre Quillery",
+                    "email": "pierre+lastfm@quillery.fr",
+                    "homepage": "http://pierre.quillery.fr/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Dead simple wrapper for the Last.fm API.",
+            "homepage": "https://github.com/dandelionmood/php-lastfm",
+            "keywords": [
+                "api",
+                "fm",
+                "last",
+                "last.fm",
+                "wrapper"
+            ],
+            "time": "2014-10-20 11:46:14"
+        },
+        {
+            "name": "kriswallsmith/buzz",
+            "version": "v0.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kriswallsmith/Buzz.git",
+                "reference": "487760b05d6269a4c2c374364325326cfa65b12c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kriswallsmith/Buzz/zipball/487760b05d6269a4c2c374364325326cfa65b12c",
+                "reference": "487760b05d6269a4c2c374364325326cfa65b12c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "suggest": {
+                "ext-curl": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Buzz": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kris Wallsmith",
+                    "email": "kris.wallsmith@gmail.com",
+                    "homepage": "http://kriswallsmith.net/"
+                }
+            ],
+            "description": "Lightweight HTTP client",
+            "homepage": "https://github.com/kriswallsmith/Buzz",
+            "keywords": [
+                "curl",
+                "http client"
+            ],
+            "time": "2014-09-15 12:42:36"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
