@@ -1,4 +1,4 @@
-PROJECT_NAME
+Last Stream
 ============
 
-A PHP implementation bla bla bla...
+A project to generate streamgraphs out of last.fm history.
