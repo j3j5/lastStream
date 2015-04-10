@@ -1,3 +1,4 @@
+config.php
 *.kdev4
 *.diff
 composer.phar
