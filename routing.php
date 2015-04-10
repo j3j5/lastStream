@@ -43,7 +43,7 @@ if(PHP_SAPI == 'cli') {
 		}
 	} else {
 		// Default controllers
-		$controller = 'landing';
+		$controller = 'home';
 		$username = '';
 	}
 	$controller = "controllers" . DIRECTORY_SEPARATOR ."$controller.php";
