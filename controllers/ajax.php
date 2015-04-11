@@ -7,8 +7,8 @@ use \Illuminate\Filesystem\Filesystem;
 
 	if(empty($username)) {
 		if(!isset($_REQUEST['username'])){
-			echo json_encode(array('result' => 401, 'error' => 'Username missing.'));
-			exit;
+			$response = array('response_type' => 'json', 'response' => json_encode(array('result' => 401, 'error' => 'Username missing.')));
+			return $response;
 		}
 		$username = $_REQUEST['username'];
 	}
