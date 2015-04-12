@@ -14,19 +14,29 @@ use Monolog\Handler\StreamHandler;
 	$cache_keys = array(
 		'artist_data' => 'artist.data.',
 	);
-	$cache_expiration_time = 60*60*24*7;
+	$cache_expiration_time = 60*60*24*1;
+
+	if(!empty($from)) {
+		$from_ts = strtotime($from);
+	} else {
+		$from_ts = 0;
+	}
+
+	if(!empty($to)) {
+		$to_ts = strtotime($to);
+	} else {
+		$to_ts = time();
+	}
 
 // 	$artist_data = $cache->get($cache_keys['artist_data'] . $username);
 	$artist_data = FALSE;
 	if(!empty($artist_data)) {
 		$log->addInfo("The user is on the cache.");
-		$data = get_streamchart_data($artist_data);
-		echo json_encode($data['data']);
+// 		$log->addInfo(print_r($artist_data, TRUE));
+// 		$data = get_streamchart_data($artist_data);
+// 		echo json_encode($data['data']);
 		exit;
 	}
-
-	$from_ts = strtotime("2014-01-01");
-	$to_ts = strtotime("2015-12-01");
 
 	$log->addInfo("The user is NOT on the cache, retrieving...");
 	$last_stream = new LastStream($cache, $last_fm_key, $last_fm_secret);

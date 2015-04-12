@@ -5,6 +5,8 @@ if(PHP_SAPI == 'cli') {
 	$arguments_structure = array(
 		'controller',
 		'username',
+		'from',
+		'to',
 	);
 	if($argc >= 2) {
 		foreach($arguments_structure AS $key => $component) {

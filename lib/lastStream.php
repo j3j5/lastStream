@@ -123,12 +123,11 @@ class LastStream {
 						),
 						FALSE
 					);
+					$this->cache->forever($this->cache_keys['week_list'] . $username . '.' . $chart->from . '.' . $chart->to, $weekly_list);
 				} catch(Exception $e) {
 					$this->handle_lastfm_exceptions($e);
 					$weekly_list = 1;
 				}
-				// Cache the errors as well
-				$this->cache->forever($this->cache_keys['week_list'] . $username . '.' . $chart->from . '.' . $chart->to, $weekly_list);
 			}
 			if(!isset($weekly_list->weeklyartistchart->artist) OR !is_array($weekly_list->weeklyartistchart->artist) OR empty($weekly_list->weeklyartistchart->artist)) {
 				$this->log->addDebug('empty artist list, skipping');
