@@ -4,62 +4,11 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "92831e00f74617f011e600af4adedc0b",
+    "hash": "6866ed3c9e9af63d681f331c78496fa3",
     "packages": [
         {
-            "name": "dandelionmood/lastfm",
-            "version": "v0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dandelionmood/php-lastfm.git",
-                "reference": "8ad35aaec70ac3ff259f483d62d58f3d3a8ae375"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dandelionmood/php-lastfm/zipball/8ad35aaec70ac3ff259f483d62d58f3d3a8ae375",
-                "reference": "8ad35aaec70ac3ff259f483d62d58f3d3a8ae375",
-                "shasum": ""
-            },
-            "require": {
-                "kriswallsmith/buzz": ">=0.9",
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "apigen/apigen": "2.8.0",
-                "phpunit/phpunit": "3.7.18"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Dandelionmood": "lib"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Pierre Quillery",
-                    "email": "pierre+lastfm@quillery.fr",
-                    "homepage": "http://pierre.quillery.fr/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Dead simple wrapper for the Last.fm API.",
-            "homepage": "https://github.com/dandelionmood/php-lastfm",
-            "keywords": [
-                "api",
-                "fm",
-                "last",
-                "last.fm",
-                "wrapper"
-            ],
-            "time": "2014-10-20 11:46:14"
-        },
-        {
             "name": "illuminate/cache",
-            "version": "v4.2.17",
+            "version": "4.2.x-dev",
             "target-dir": "Illuminate/Cache",
             "source": {
                 "type": "git",
@@ -108,7 +57,7 @@
         },
         {
             "name": "illuminate/filesystem",
-            "version": "v4.2.17",
+            "version": "4.2.x-dev",
             "target-dir": "Illuminate/Filesystem",
             "source": {
                 "type": "git",
@@ -151,7 +100,7 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v4.2.17",
+            "version": "4.2.x-dev",
             "target-dir": "Illuminate/Support",
             "source": {
                 "type": "git",
@@ -198,32 +147,65 @@
             "time": "2015-01-27 20:51:43"
         },
         {
-            "name": "kriswallsmith/buzz",
-            "version": "v0.13",
+            "name": "j3j5/lastfm-apio",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/kriswallsmith/Buzz.git",
-                "reference": "487760b05d6269a4c2c374364325326cfa65b12c"
+                "url": "https://github.com/j3j5/lastfm-apio.git",
+                "reference": "d2d3784b1d450a447762366535b608445a54737c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/Buzz/zipball/487760b05d6269a4c2c374364325326cfa65b12c",
-                "reference": "487760b05d6269a4c2c374364325326cfa65b12c",
+                "url": "https://api.github.com/repos/j3j5/lastfm-apio/zipball/d2d3784b1d450a447762366535b608445a54737c",
+                "reference": "d2d3784b1d450a447762366535b608445a54737c",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "3.7.*"
-            },
-            "suggest": {
-                "ext-curl": "*"
+                "marcushat/rolling-curl-x": "dev-master",
+                "monolog/monolog": "~1.13@dev",
+                "php": ">=5.4.0"
             },
             "type": "library",
             "autoload": {
                 "psr-0": {
-                    "Buzz": "lib/"
+                    "j3j5": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPLv3"
+            ],
+            "authors": [
+                {
+                    "name": "Julio Foulquie",
+                    "email": "jfoulquie@gmail.com",
+                    "homepage": "http://github.com/j3j5"
+                }
+            ],
+            "description": "A simple PHP wrapper for the Last.fm API that allows you to launch parallel requests.",
+            "time": "2015-04-12 19:11:33"
+        },
+        {
+            "name": "marcushat/rolling-curl-x",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/j3j5/RollingCurlX.git",
+                "reference": "739d0430daa6815529732af44fa1f451a0afe842"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/j3j5/RollingCurlX/zipball/739d0430daa6815529732af44fa1f451a0afe842",
+                "reference": "739d0430daa6815529732af44fa1f451a0afe842",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "marcushat": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -232,31 +214,28 @@
             ],
             "authors": [
                 {
-                    "name": "Kris Wallsmith",
-                    "email": "kris.wallsmith@gmail.com",
-                    "homepage": "http://kriswallsmith.net/"
+                    "name": "Julio Foulquie",
+                    "email": "jfoulquie@gmail.com"
+                },
+                {
+                    "name": "Marcus Hat"
                 }
             ],
-            "description": "Lightweight HTTP client",
-            "homepage": "https://github.com/kriswallsmith/Buzz",
-            "keywords": [
-                "curl",
-                "http client"
-            ],
-            "time": "2014-09-15 12:42:36"
+            "description": "Easy to use cURL Multi wrapper for PHP.",
+            "time": "2015-04-12 16:41:47"
         },
         {
             "name": "monolog/monolog",
-            "version": "1.13.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "c31a2c4e8db5da8b46c74cf275d7f109c0f249ac"
+                "reference": "a54d460500aeaf653cabc1059cc33d07e7b544ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/c31a2c4e8db5da8b46c74cf275d7f109c0f249ac",
-                "reference": "c31a2c4e8db5da8b46c74cf275d7f109c0f249ac",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/a54d460500aeaf653cabc1059cc33d07e7b544ad",
+                "reference": "a54d460500aeaf653cabc1059cc33d07e7b544ad",
                 "shasum": ""
             },
             "require": {
@@ -316,7 +295,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2015-03-09 09:58:04"
+            "time": "2015-04-04 10:50:52"
         },
         {
             "name": "nesbot/carbon",
@@ -367,22 +346,27 @@
         },
         {
             "name": "psr/log",
-            "version": "1.0.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b"
+                "reference": "bf2c13de4300e227d7b2fd08027673a79c519987"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
-                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/bf2c13de4300e227d7b2fd08027673a79c519987",
+                "reference": "bf2c13de4300e227d7b2fd08027673a79c519987",
                 "shasum": ""
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
             "autoload": {
-                "psr-0": {
-                    "Psr\\Log\\": ""
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -401,11 +385,11 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2012-12-21 11:40:51"
+            "time": "2015-03-26 14:39:45"
         },
         {
             "name": "symfony/finder",
-            "version": "v2.5.11",
+            "version": "2.5.x-dev",
             "target-dir": "Symfony/Component/Finder",
             "source": {
                 "type": "git",
@@ -452,17 +436,17 @@
         },
         {
             "name": "symfony/translation",
-            "version": "v2.6.6",
+            "version": "2.6.x-dev",
             "target-dir": "Symfony/Component/Translation",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Translation.git",
-                "reference": "bd939f05cdaca128f4ddbae1b447d6f0203b60af"
+                "reference": "3166541ec7107264270c3e85d4d42f2396a50ce6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Translation/zipball/bd939f05cdaca128f4ddbae1b447d6f0203b60af",
-                "reference": "bd939f05cdaca128f4ddbae1b447d6f0203b60af",
+                "url": "https://api.github.com/repos/symfony/Translation/zipball/3166541ec7107264270c3e85d4d42f2396a50ce6",
+                "reference": "3166541ec7107264270c3e85d4d42f2396a50ce6",
                 "shasum": ""
             },
             "require": {
@@ -507,15 +491,19 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "http://symfony.com",
-            "time": "2015-03-30 15:54:10"
+            "time": "2015-04-09 12:33:02"
         }
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "j3j5/lastfm-apio": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=5.4.0"
+    },
     "platform-dev": []
 }
