@@ -152,12 +152,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/j3j5/lastfm-apio.git",
-                "reference": "d2d3784b1d450a447762366535b608445a54737c"
+                "reference": "22e038a4105fb2c803708824fb18a521da8a540b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/j3j5/lastfm-apio/zipball/d2d3784b1d450a447762366535b608445a54737c",
-                "reference": "d2d3784b1d450a447762366535b608445a54737c",
+                "url": "https://api.github.com/repos/j3j5/lastfm-apio/zipball/22e038a4105fb2c803708824fb18a521da8a540b",
+                "reference": "22e038a4105fb2c803708824fb18a521da8a540b",
                 "shasum": ""
             },
             "require": {
@@ -183,7 +183,7 @@
                 }
             ],
             "description": "A simple PHP wrapper for the Last.fm API that allows you to launch parallel requests.",
-            "time": "2015-04-12 19:11:33"
+            "time": "2015-04-12 22:38:18"
         },
         {
             "name": "marcushat/rolling-curl-x",
@@ -191,12 +191,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/j3j5/RollingCurlX.git",
-                "reference": "739d0430daa6815529732af44fa1f451a0afe842"
+                "reference": "7067613ba61ed5c11188d9057bbf413cdca57cbd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/j3j5/RollingCurlX/zipball/739d0430daa6815529732af44fa1f451a0afe842",
-                "reference": "739d0430daa6815529732af44fa1f451a0afe842",
+                "url": "https://api.github.com/repos/j3j5/RollingCurlX/zipball/7067613ba61ed5c11188d9057bbf413cdca57cbd",
+                "reference": "7067613ba61ed5c11188d9057bbf413cdca57cbd",
                 "shasum": ""
             },
             "require": {
@@ -222,7 +222,7 @@
                 }
             ],
             "description": "Easy to use cURL Multi wrapper for PHP.",
-            "time": "2015-04-12 16:41:47"
+            "time": "2015-04-13 19:04:08"
         },
         {
             "name": "monolog/monolog",
