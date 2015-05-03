@@ -112,7 +112,7 @@ class LastStream {
 // 			$weekly_list = $this->cache->get($this->cache_keys['week_list'] . $username . '.' . $chart->from . '.' . $chart->to);
 			$weekly_list = FALSE;
 			if(empty($weekly_list)) {
-				$this->log->addInfo("Rertrieving weekly artist chart for $username.");
+				$this->log->addInfo("Rertrieving weekly artist chart for $username from " . date($date_format, $chart->from) . " to ". date($date_format, $chart->to) . ".");
 				try {
 					$weekly_list = $this->api->user_getweeklyartistchart(
 						array(
@@ -143,9 +143,9 @@ class LastStream {
 					continue;
 				}
 
-				$chart_list_ts = $this->get_middle_point_ts($chart->from, $chart->to);
+				$chart_list_ts = $this->get_middle_point_ts($weekly_list->weeklyartistchart->{"@attr"}->from, $weekly_list->weeklyartistchart->{"@attr"}->to);
 
-				$this->log->addInfo(count($weekly_list->weeklyartistchart->artist) . " artists found, storing...");
+				$this->log->addInfo(count($weekly_list->weeklyartistchart->artist) . " artists found for " . date("Y-m-d", $chart_list_ts) . ", storing...");
 
 				// Fill chart data with this chart's info
 				foreach($weekly_list->weeklyartistchart->artist AS $artist) {
