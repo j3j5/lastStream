@@ -4,9 +4,11 @@
 		"illuminate/cache": "4.2.*",
 		"illuminate/filesystem": "4.2.*",
 		"monolog/monolog": "~1.13",
-		"j3j5/lastfm-apio": "dev-master"
+		"marcushat/rolling-curl-x": "*@dev"
 	},
-	"minimum-stability": "dev",
+	"require-dev": {
+		"j3j5/lastfm-apio": "dev-master@dev"
+	},
 	"autoload": {
 		"files": [
 			"lib/lastStream.php"
