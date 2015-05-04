@@ -7,3 +7,4 @@ vendor/
 .*-swp
 .directory
 .idea/
+node_modules/
