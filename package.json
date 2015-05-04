@@ -1,0 +1,22 @@
+{
+  "name": "lastfm-streamchart",
+  "version": "0.0.1",
+  "description": "Last Stream ============",
+  "main": "index.js",
+  "dependencies": {
+    "d3": "~3.5.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/j3j5/lastStream.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/j3j5/lastStream/issues"
+  }
+}
