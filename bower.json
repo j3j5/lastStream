@@ -1,0 +1,9 @@
+{
+  "name": "lastfm-streamchart",
+  "version": "0.0.1",
+  "homepage": "https://github.com/j3j5/lastStream",
+  "authors": [
+    "Javier Negre <javiscript.me@gmail.com>"
+  ],
+  "license": "MIT"
+}
