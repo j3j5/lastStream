@@ -4,7 +4,8 @@
   "description": "Last Stream ============",
   "main": "index.js",
   "dependencies": {
-    "d3": "~3.5.5"
+    "d3": "~3.5.5",
+    "jsdom": "~3.1.2"
   },
   "devDependencies": {},
   "scripts": {
